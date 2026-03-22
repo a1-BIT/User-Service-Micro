@@ -1,0 +1,72 @@
+# ================================
+# Dependencies
+# ================================
+node_modules/
+
+# ================================
+# TypeScript Compiled Output
+# ================================
+dist/
+*.tsbuildinfo
+
+# ================================
+# Environment Variables
+# ================================
+.env
+.env.*
+!.env.example          # always commit this as a template
+
+# ================================
+# Logs
+# ================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ================================
+# Runtime & Process
+# ================================
+pids/
+*.pid
+*.pid.lock
+
+# ================================
+# Test Coverage
+# ================================
+coverage/
+*.lcov
+.nyc_output/
+
+# ================================
+# Cache & Temp Files
+# ================================
+.npm
+.eslintcache
+.stylelintcache
+.node_repl_history
+
+# ================================
+# OS Generated Files
+# ================================
+.DS_Store           # macOS
+Thumbs.db           # Windows
+Desktop.ini         # Windows
+
+# ================================
+# IDE & Editor
+# ================================
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# ================================
+# Misc
+# ================================
+*.tgz
+*.seed
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
