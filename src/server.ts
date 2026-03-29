@@ -1,15 +1,14 @@
 import { env } from './config/env.js'
 import { connectDB, disconnectDB } from './config/db.js'
+import app from './app.js'
 
 async function bootstrap(): Promise<void> {
 
     await connectDB()
 
-    // 2. TODO: Start Express server here
-    //    import app from './app.js'
-    //    app.listen(env.PORT, () => { ... })
-
-    console.log(`Server is ready (PORT=${env.PORT}, ENV=${env.NODE_ENV})`)
+    app.listen(env.PORT, () => {
+        console.log(`Server running on port ${env.PORT} (${env.NODE_ENV})`)
+    })
 }
 
 function shutdown(signal: string): void {
